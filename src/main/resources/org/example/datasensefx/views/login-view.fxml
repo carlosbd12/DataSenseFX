@@ -64,17 +64,26 @@
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                 </padding>
             </PasswordField>
+   
+           <!-- Checkbox Mantener sesión -->
+           <CheckBox fx:id="rememberMeCheckBox" mnemonicParsing="false" text="Mantener sesión iniciada">
+               <font>
+                   <Font size="12.0" />
+               </font>
+           </CheckBox>
         </VBox>
 
-        <!-- Checkbox Mantener sesión -->
-        <CheckBox fx:id="rememberMeCheckBox" mnemonicParsing="false" text="Mantener sesión iniciada">
-            <font>
-                <Font size="12.0" />
-            </font>
-        </CheckBox>
-
         <!-- Botón Iniciar sesión -->
-        <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#handleLogin" style="-fx-background-color: #0066cc; -fx-text-fill: white; -fx-background-radius: 5; -fx-cursor: hand;" text="Iniciar sesión">
+        <Button fx:id="loginButton"
+                maxWidth="Infinity"
+                mnemonicParsing="false"
+                onAction="#handleLogin"
+                style="-fx-background-color: #0066cc; -fx-text-fill: white;
+                -fx-background-radius: 5;
+                -fx-cursor: hand;"
+                text="Iniciar sesión"
+                defaultButton="true">
+
             <padding>
                 <Insets bottom="12.0" left="20.0" right="20.0" top="12.0" />
             </padding>
